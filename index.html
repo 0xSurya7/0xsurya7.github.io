@@ -1,18 +1,57 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surya's Voyage</title>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet" />
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e0eafc);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-align: center;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>Surya's Voyage 🌞</h1>
+  <p>Welcome to my personal journey on the web. Stay tuned for projects, ideas, and explorations!</p>
+
+  <footer>© 2025 Surya. All rights reserved.</footer>
+</body>
+</html>
